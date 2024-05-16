@@ -1,0 +1,120 @@
+body {
+  background-image: url(./assets/b8.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   /* This ensures that the body takes up the full height of the viewport */
+}
+
+.to-do-list {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  border: 1px solid rgba(255, 253, 253, 0.476);;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.455);;;
+}
+.to-do-list:hover {
+  box-shadow: 0 0 15px rgba(192, 192, 192, 0.399); 
+}
+
+h2 {
+  font-size: 3rem;
+  color: rgba(255, 251, 251, 0.535);;;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgba(5, 93, 165, 0.576);
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.add-btn {
+  background-color: rgba(67, 147, 67, 0.462);
+  margin: 15px;
+  height: 45px;
+}
+
+.add-btn:hover {
+  background-color: rgba(58, 137, 58, 0.758);
+}
+
+.delete-btn {
+  background-color: rgba(255, 111, 111, 0.612);
+}
+
+.delete-btn:hover {
+  background-color: rgba(255, 55, 55, 0.575);
+}
+
+.move-btn {
+  background-color: rgba(255, 205, 111, 0.612);
+}
+
+.move-btn:hover {
+  background-color: rgba(255, 189, 66, 0.764);
+}
+
+input[type="text"] {
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid rgba(0, 140, 255, 0.543);
+  border-radius: 5px;
+  color: rgba(110, 108, 108, 0.809);
+  background-color: rgba(255, 253, 253, 0.622);;;
+  
+}
+
+input[type="text"]:focus {
+  outline: none; /* This removes the default focus outline */
+  border-color: rgba(0, 140, 255, 0.8); /* Set the border color when focused */
+  box-shadow: 0 0 5px rgba(0, 140, 255, 0.5); /* Set the box shadow when focused */
+}
+ol {
+  padding: 0px;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 2px solid rgba(0, 140, 255, 0.543);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 253, 253, 0.622);;
+}
+
+.task-text {
+  flex: 2;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.delete-btn,
+.move-btn,
+.edit-btn {
+  padding: 8px 12px;
+  margin-left: 10px;
+}
+
+.edit-btn:hover {
+  background-color: rgba(5, 93, 165, 0.801);
+}
